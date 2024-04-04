@@ -10,4 +10,4 @@ $database = new Database($config);
 $homes = $database->query("select * from home")->get();
 
 
-view('index' ,['homes'=>$homes]);
+view('contact' ,['homes'=>$homes]);

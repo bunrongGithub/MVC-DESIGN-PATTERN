@@ -29,7 +29,7 @@ class Functions {
    public static function abort ( $code = 404 ): string
    {
        http_response_code($code);
-       require $code . '.php';
+       require BestPath . $code . '.php';
        die();
    }
 }
